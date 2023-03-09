@@ -49,3 +49,30 @@ public:
         
     }
 };
+/*LEETCODE PROBLEM-169 MAJORITY ELEMENT*/
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+       long int n=nums.size();
+       long int pos=0,i=0;
+       long int count=0;
+       while(i<n){   
+           long int sum=0;
+           long int j=0;
+           while(j<n){
+               if(nums[i]==nums[j]){
+                   sum=sum+1;
+               }
+               j++;
+               
+           }
+           if(sum>count){
+                   count=sum;
+                   pos=i;
+            }
+            i++;
+
+       }
+       return nums[pos];
+    }
+};
