@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-/*inline void sum(int);*/
+/*inline void sum(int,int);*/
 /*class set
 {
     public:
