@@ -99,7 +99,7 @@ int main(){
         string s;
         cin>>s;
         for(int i=0;i<n;i++){
-            hsh[i+1][s[i]-'a'];
+            hsh[i+1][s[i]-'a']++;
         }
         for(int i=0;i<26;i++){
             for(int j=1;j<=n;j++){
